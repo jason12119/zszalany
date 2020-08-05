@@ -2,15 +2,20 @@
   width: 98%;
   max-width: 1400px;
 }
-h1,
 h2 {
-  font-size: 62px;
+  font-size: 28px;
   font-weight: 400;
-  text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Exo 2', serif;
+  text-align: left;
+  margin-bottom: 20px;
 }
-h2 {
-  margin-bottom: 45px;
+.after:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  background-color: #b7cc29;
+  margin-top: 10px;
 }
 h3 {
   color: #000000;
@@ -290,7 +295,7 @@ body {
   position: relative;
   float: left;
   width: 100%;
-  height: 85vh;
+  height: 80vh;
   background-image: url("../img/background_image.png");
   background-size: cover;
   background-position: center center;
@@ -396,38 +401,216 @@ h3 {
 .content {
   position: relative;
   float: left;
-  padding: 30px;
+  padding: 30px 50px;
+  margin-bottom: 125px;
+  margin-left: -17px;
   top: 190px;
   width: 100%;
   min-height: 160px;
-  max-width: 750px;
+  max-width: 740px;
   background-color: #FFFFFF;
-  border-radius: 5px;
-  border: solid 1px #F00;
+  border-radius: 15px;
 }
 .content .date {
   font-family: "Exo 2";
   font-weight: 700;
   color: #006371;
 }
-.content h2 {
-  text-align: left;
-  margin-bottom: 20px;
-}
-.content h2:after {
-  content: "";
-  display: block;
-  width: 120px;
-  height: 4px;
-  background-color: #b7cc29;
-  margin-top: 10px;
-}
 .content p {
-  font-family: "Exo 2";
-  font-size: 20px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 21px;
   color: #006371;
+  margin-bottom: 34px;
 }
 .content .button {
-  color: #000000;
+  border-radius: 10px;
+  background-color: #b7cc29;
+  padding: 10px 20px;
+  max-width: 200px;
+  text-align: center;
+  transition-duration: 0.12s;
 }
-/*# sourceMappingURL=style.css.map */
+.content .button:hover {
+  background-color: #006371;
+}
+.content .button a {
+  max-width: 200px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  transition-duration: 0.12s;
+}
+/* BOTTOM-CONTENT */
+#bottom-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f3feff;
+  /* BOTTOM-CONTENT LEFT - POSTS */
+  /* BOTTOM-CONTENT RIGHT - EVENT CALENDAR */
+}
+#bottom-content h2 {
+  text-align: left;
+}
+#bottom-content .post {
+  margin-top: 50px;
+}
+#bottom-content .post .post-image {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  width: 20%;
+}
+#bottom-content .post .post-text {
+  padding-left: 50px;
+  display: inline-block;
+  width: 75%;
+}
+#bottom-content .post .post-text p {
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+#bottom-content .post .post-text h3 {
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-weight: 700;
+  vertical-align: top;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+#bottom-content .post .button {
+  float: right;
+  border-radius: 8px;
+  background-color: #b7cc29;
+  padding: 5px 17px;
+  margin-top: 30px;
+  max-width: 200px;
+  text-align: center;
+  transition-duration: 0.12s;
+}
+#bottom-content .post .button .fa {
+  font-size: 14px;
+}
+#bottom-content .post .button:hover {
+  background-color: #006371;
+}
+#bottom-content .post .button a {
+  max-width: 200px;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  transition-duration: 0.12s;
+}
+#bottom-content #event-calendar {
+  background-color: #eef7f8;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+#bottom-content #event-calendar .event {
+  padding: 0px 34px 19px 34px;
+}
+#bottom-content #event-calendar .event:first-of-type {
+  padding-top: 29px;
+}
+#bottom-content #event-calendar .event .date {
+  font-family: "Exo 2";
+  font-size: 22px;
+  font-weight: 700;
+  color: #006371;
+  padding-bottom: 9px;
+}
+#bottom-content #event-calendar .event .description {
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+#bottom-content #event-calendar .event:after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 2px;
+  background-color: #b7cc29;
+  margin-top: 20px;
+}
+#bottom-content #event-calendar .event:last-of-type {
+  padding-bottom: 10px;
+}
+#bottom-content #event-calendar .event:last-of-type:after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 0px;
+  background-color: #b7cc29;
+  margin-top: 20px;
+}
+#bottom-content .button {
+  margin-top: 60px;
+  border-radius: 10px;
+  background-color: #b7cc29;
+  padding: 10px 20px;
+  max-width: 200px;
+  text-align: center;
+  transition-duration: 0.12s;
+}
+#bottom-content .button:hover {
+  background-color: #006371;
+}
+#bottom-content .button a {
+  max-width: 200px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  transition-duration: 0.12s;
+}
+#projects {
+  background-color: #FFF;
+  height: 500px;
+}
+#projects h2 {
+  color: #b7cc29;
+  padding-top: 0;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+#projects #project-list .eu-description {
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+#projects #project-list .project-row .after-projects:after {
+  content: "";
+  background-color: #d3d3d3;
+  display: inline-block;
+  height: 120px;
+  width: 2px;
+  margin-bottom: -60px;
+  margin-left: 55px;
+  margin-right: 45px;
+}
+#projects #project-list .project-row ul {
+  padding-top: 0;
+  margin-top: 60px;
+}
+#projects #project-list .project-row ul li {
+  display: inline;
+  list-style: none;
+}
+#projects #project-list .project-row ul li:first-of-type {
+  padding-left: 0;
+}
+#projects #project-list .project-row ul li.bottom-projects {
+  margin-right: 100px;
+}
