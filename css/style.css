@@ -323,6 +323,10 @@ body {
 .paddingR0 {
   padding-right: 0;
 }
+.paddingTB20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .paddingTB40 {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -371,14 +375,16 @@ body {
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 2px;
+  padding-right: 35px;
 }
 #header #links span {
   padding-left: 17px;
+  padding-right: 17px;
 }
 #header #links li {
   display: inline;
   text-transform: uppercase;
-  padding: 17px;
+  padding: 0;
 }
 #header #links img {
   margin-top: -8px;
@@ -420,10 +426,23 @@ body {
   font-size: 27px;
 }
 #header #header-nav #nav li {
+  position: relative;
   margin-left: 45px;
   font-size: 20px;
   display: inline-block;
   vertical-align: middle;
+}
+#header #header-nav #nav li.main .submenu {
+  border: solid 1px #F00;
+  position: absolute;
+  left: -125px;
+  top: 100px;
+  z-index: 13;
+  display: block;
+  width: 100%;
+  min-width: 750px;
+  min-height: 300px;
+  background-color: #FFFFFF;
 }
 #header #header-nav #nav li.main.active a {
   color: #b7cc29 !important;
@@ -737,6 +756,58 @@ h3 {
   height: 50vh;
   width: 100%;
   margin-bottom: -45px;
+}
+/* OBASH PAGE */
+#path ul {
+  padding-left: 0;
+}
+#path ul li {
+  display: inline;
+}
+#path ul li a {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 18px;
+  color: #006371;
+  text-decoration: none;
+}
+#path ul li a:hover {
+  color: #b7cc29;
+}
+#path ul li .fa {
+  font-size: 28px;
+  position: relative;
+  top: 2px;
+}
+#path ul li:after {
+  content: "/";
+  color: #b7cc29;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+#path ul li:last-of-type:after {
+  content: "";
+}
+#obsah h2:after,
+#obsah h3:after {
+  content: "";
+  width: 105px;
+}
+#obsah h3 {
+  margin-top: 0;
+  font-size: 24px;
+}
+#obsah p {
+  margin-top: 0;
+  line-height: 36px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+#obsah img {
+  max-width: 624px;
+  margin: auto;
 }
 /* FOOTER */
 #footer {

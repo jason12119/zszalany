@@ -391,6 +391,11 @@ body {
   padding-right: 0;
 }
 
+.paddingTB20{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .paddingTB40 {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -445,15 +450,17 @@ body {
     font-size: 28px;
     font-weight: 600;
     letter-spacing: 2px;
+    padding-right: 35px;
 
     span{
       padding-left: 17px;
+      padding-right: 17px;
     }
 
     li {
       display: inline;
       text-transform: uppercase;
-      padding: 17px;
+      padding: 0;
     }
     img{
       margin-top: -8px;
@@ -503,14 +510,28 @@ body {
       }
 
       li {
+        position: relative;
         margin-left: 45px;
         font-size: 20px;
-
         display: inline-block;
         vertical-align: middle;
 
 
         &.main {
+
+.submenu{
+  .border();
+  position: absolute;
+  left: -125px;
+  top: 100px;
+  z-index: 13;
+  display: block;
+  width: 100%;
+  min-width: 750px;
+  min-height: 300px;
+  background-color: #FFFFFF;
+}
+
           &.active a{
             color: #b7cc29 !important;
           }
@@ -905,7 +926,68 @@ p{
   }
 }
 
+/* OBASH PAGE */
 
+#path{
+  ul{  
+    .paddingL0();
+    li{
+      display: inline;
+      a{
+        font-family: "Exo 2";
+        font-weight: 600;
+        font-size: 18px;
+        color: #006371;  
+        text-decoration: none;
+        &:hover{
+          color: #b7cc29;
+        }
+       }
+       .fa{
+         font-size: 28px;
+         position: relative;
+         top: 2px;
+       }
+      &:after{
+        content: "/";
+        color: #b7cc29;
+        font-size: 18px;
+        padding-left: 20px;
+        padding-right: 10px;
+      }
+      &:last-of-type{
+        &:after{
+          content: "";
+          }
+        }
+  }
+}
+}
+
+#obsah{
+  
+  h2, h3{
+    &:after{
+      content: "";
+      width: 105px;
+    }
+  }
+  h3{
+    margin-top: 0;
+    font-size: 24px;
+  }
+  p{
+    margin-top: 0;
+    line-height: 36px;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+  }
+  img{
+    max-width: 624px;
+    margin: auto;
+  }
+}
 
 
 
