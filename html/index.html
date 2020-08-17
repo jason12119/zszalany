@@ -24,18 +24,26 @@
 </head>
 
 <body>
-    <div id="background">
+
+    <div class="container-fluid" id="background">
         <div class="overlay"></div>
-    </div>
-    <!-- HEADER -->
-    <div class="container-fluid" id="header">
-        <div class="container">
+        <!-- HEADER -->
+        <div class="container" id="header">
 
             <ul id="links">
-                <li class="link"><img src="../img/links/bakalari_logo.png" alt=""><span>bakaláři</span></li>
-                <li class="link"><img src="../img/links/fb.png" alt=""></li>
-                <li class="link"><img src="../img/links/instagram.png" alt=""></li>
-                <li class="link"><img src="../img/links/youtube.png" alt=""></li>
+                <li class="link">
+                    <a href="#"><img src="../img/links/bakalari_logo.png" alt=""><span>bakaláři</span></a>
+                </li>
+                <li class="link">
+                    <a href="#"><img src="../img/links/fb.png" alt=""></a>
+                </li>
+                <li class="link">
+                    <a href="#"><img src="../img/links/instagram.png" alt=""></a>
+                </li>
+                <li class="link">
+                    <a href="#"><img src="../img/links/youtube.png" alt="">
+                    </a>
+                </li>
             </ul>
 
             <div id="header-nav">
@@ -52,11 +60,11 @@
                     <li class="main"><a href="">Školní jídelna</a></li>
                     <li class="main"><a href="">Družina</a></li>
                     <li class="main"><a href="">Kontakty</a></li>
-                    <li><i class="fa fa-search green"></i></li>
+                    <li><i class="fa fa-search green pointer"></i></li>
                 </ul>
             </div>
         </div>
-        <div class="container">
+        <div class="container paddingTB80">
             <div class="content">
                 <div class="date">
                     <i class="fa fa-clock-o green"></i> 10.7.2020
@@ -64,7 +72,8 @@
                 <h2 class="after">
                     ŠVP Valdek - Informace
                 </h2>
-                <p>Dobrý den, k dnešnímu dni zaplatilo zálohovou platbu za školu v přírodě 82 žáků. Stále nám ještě zbývá 18 volných míst. Kdo má ještě zájem o školu v pčírodě, je třeba uhradit zálohovou platbu co nejdříve.</p>
+                <p>Dobrý den, k dnešnímu dni zaplatilo zálohovou platbu za školu v přírodě 82 žáků. Stále nám ještě zbývá 18 volných míst. Kdo má ještě zájem o školu v pčírodě, je třeba uhradit zálohovou platbu co nejdříve.
+                </p>
                 <div class="button">
                     <a href="#">
                     Přečíst celé
@@ -76,7 +85,7 @@
 
     <div class="clearfix"></div>
 
-    <div class="container-fluid paddingLR0" id="bottom-content">
+    <div class="container-fluid paddingLR0 paddingTB40 bg-blue " id="hp-bottom-content">
         <div class="container">
             <div class="col-md-8">
                 <h2 class="after"> <i class="fa fa-newspaper-o"></i> Aktuální informace</h2>
@@ -84,8 +93,7 @@
                 <div class="post">
                     <img src="../img/posts/post1.png" class="post-image" alt="">
                     <div class="post-text">
-                        <h3 class="after">Škola v přírodě Valdek</h3>
-                        <i class="fa fa-clock"></i>
+                        <h3>Škola v přírodě Valdek</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Nulla pulvinar eleifend sem.</p>
                         <div class="button">
                             <a href="#">
@@ -98,7 +106,7 @@
                 <div class="post">
                     <img src="../img/posts/post1.png" class="post-image" alt="">
                     <div class="post-text">
-                        <h3 class="after">Škola v přírodě Valdek</h3>
+                        <h3>Škola v přírodě Valdek</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Nulla pulvinar eleifend sem.</p>
                         <div class="button">
                             <a href="#">
@@ -111,7 +119,7 @@
                 <div class="post">
                     <img src="../img/posts/post1.png" class="post-image" alt="">
                     <div class="post-text">
-                        <h3 class="after">Škola v přírodě Valdek</h3>
+                        <h3>Škola v přírodě Valdek</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Nulla pulvinar eleifend sem.</p>
                         <div class="button">
                             <a href="#">
@@ -120,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="button"><a href="#">Archiv Novinek</a></div>
             </div>
             <div class="col-md-4">
                 <h2 class="after"><i class="fa fa-calendar"></i> Kalendář akcí</h2>
@@ -180,7 +188,7 @@
         </div>
     </div>
 
-    <div class="container-fluid paddingLR0" id="projects">
+    <div class="container-fluid paddingLR0 paddingTB40" id="projects">
         <div class="container">
             <h2 class="text-center">Naše škola je zapojena do následujících projektů</h2>
             <div id="project-list">
@@ -189,9 +197,9 @@
                 <p class="text-center"><strong>EU peníze školám - OPVK 1.4 Zlepšení podmínek pro vzdělávání na ZŠ, Název projektu - Cesta k efektivnímu učení CZ.1.07/1.4.00/21.3210</strong></p>
                 <div class="project-row text-center">
                     <ul>
-                        <li class="after-projects"><img src="../img/projects/rodice_vitani.png"></li>
-                        <li class="after-projects"><img src="../img/projects/sever.png"></li>
-                        <li class="after-projects"><img src="../img/projects/toyota.png"></li>
+                        <li><img src="../img/projects/rodice_vitani.png"></li>
+                        <li><img src="../img/projects/sever.png"></li>
+                        <li><img src="../img/projects/toyota.png"></li>
                         <li><img src="../img/projects/grants.png"></li>
                     </ul>
                     <ul>
@@ -202,7 +210,18 @@
             </div>
         </div>
     </div>
+    <div class="clearfix"></div>
 
+    <div class="container-fluid paddingTB40" id="footer">
+        <div class="container">
+            <div id="copyright">
+                © 2020 ZŠ Žalany
+            </div>
+            <div id="sign">
+                <a href="https://www.prestissimo.cz" title="">Tvorba webových stránek</a>
+            </div>
+        </div>
+    </div>
 
 
     <!-- HELPERS -->

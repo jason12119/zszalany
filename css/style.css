@@ -2,12 +2,45 @@
   width: 98%;
   max-width: 1400px;
 }
+h1 {
+  display: inline-block;
+  color: #FFF;
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 38px;
+  text-transform: uppercase;
+  padding-top: 140px;
+  margin-bottom: -10px;
+  z-index: 11;
+  position: relative;
+}
+h1:after {
+  content: "";
+  display: block;
+  background-color: #b7cc29;
+  width: 100px;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+}
 h2 {
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 700;
   font-family: 'Exo 2', serif;
-  text-align: left;
-  margin-bottom: 20px;
+  color: #006371;
+  padding-bottom: 20px;
+}
+h2:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  background-color: #b7cc29;
+  margin-top: 10px;
+}
+.bg-blue {
+  background-color: #f3feff;
 }
 .after:after {
   content: "";
@@ -19,9 +52,16 @@ h2 {
 }
 h3 {
   color: #000000;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 700;
-  margin-bottom: 40px;
+}
+h3:after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #b7cc29;
+  margin-top: 6px;
 }
 /* ===== FRONT-END HELPERS =====*/
 .input-ux {
@@ -277,6 +317,9 @@ body {
 .paddingL0 {
   padding-left: 0;
 }
+.paddingL25p {
+  padding-left: 25%;
+}
 .paddingR0 {
   padding-right: 0;
 }
@@ -295,11 +338,12 @@ body {
   position: relative;
   float: left;
   width: 100%;
-  height: 80vh;
   background-image: url("../img/background_image.png");
   background-size: cover;
   background-position: center center;
   overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 #background .overlay {
   width: 100%;
@@ -323,15 +367,28 @@ body {
 #header #links {
   margin-top: 20px;
   float: right;
+  font-family: "Exo 2";
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+#header #links span {
+  padding-left: 17px;
 }
 #header #links li {
   display: inline;
   text-transform: uppercase;
   padding: 17px;
 }
+#header #links img {
+  margin-top: -8px;
+}
+#header #links a {
+  color: #FFF;
+}
 #header #header-nav {
   position: absolute;
-  top: 70px;
+  top: 75px;
   left: 0;
   background-color: #FFFFFF;
   width: 100%;
@@ -341,7 +398,7 @@ body {
   float: left;
   position: absolute;
   left: 30px;
-  top: -36px;
+  top: -41px;
 }
 #header #header-nav #header-logo img {
   width: 100%;
@@ -353,17 +410,23 @@ body {
 }
 #header #header-nav #nav .fa {
   font-size: 40px;
-  padding-top: 30px;
+  position: relative;
+  top: 17px;
+}
+#header #header-nav #nav .fa:hover {
+  color: #b7cc29;
 }
 #header #header-nav #nav .fa-search {
   font-size: 27px;
-  padding-top: 35px;
 }
 #header #header-nav #nav li {
   margin-left: 45px;
   font-size: 20px;
   display: inline-block;
   vertical-align: middle;
+}
+#header #header-nav #nav li.main.active a {
+  color: #b7cc29 !important;
 }
 #header #header-nav #nav li.main:before {
   content: "";
@@ -376,24 +439,23 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-#header #header-nav #nav li.main:hover:before {
+#header #header-nav #nav li.main:hover:before,
+#header #header-nav #nav li.main.active:before {
   width: 100%;
 }
 #header #header-nav #nav li a {
-  font-weight: 400;
+  font-family: "Exo 2";
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
   color: #006371;
 }
-/* CONTENT */
-.fa.green {
+#header #header-nav #nav li a:hover {
   color: #b7cc29;
 }
-h2 {
-  font-family: "Exo 2";
-  font-size: 28px;
-  font-weight: 700;
-  color: #006371;
+/* HOMEPAGE */
+.fa.green {
+  color: #b7cc29;
 }
 h3 {
   color: #006371;
@@ -404,12 +466,16 @@ h3 {
   padding: 30px 50px;
   margin-bottom: 125px;
   margin-left: -17px;
-  top: 190px;
+  top: 145px;
   width: 100%;
   min-height: 160px;
   max-width: 740px;
   background-color: #FFFFFF;
   border-radius: 15px;
+}
+.content h2 {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .content .date {
   font-family: "Exo 2";
@@ -417,63 +483,87 @@ h3 {
   color: #006371;
 }
 .content p {
+  width: 100%;
+  display: block;
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 21px;
   color: #006371;
   margin-bottom: 34px;
+  overflow-wrap: break-word;
 }
 .content .button {
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #b7cc29;
-  padding: 10px 20px;
-  max-width: 200px;
   text-align: center;
   transition-duration: 0.12s;
-}
-.content .button:hover {
-  background-color: #006371;
-}
-.content .button a {
-  max-width: 200px;
-  text-decoration: none;
+  float: left;
   text-transform: uppercase;
   font-family: "Open Sans";
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
+}
+.content .button a {
+  text-decoration: none;
   color: #ffffff;
   transition-duration: 0.12s;
+  display: block;
+  padding: 5px 20px;
+  border-radius: 5px;
 }
-/* BOTTOM-CONTENT */
-#bottom-content {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #f3feff;
-  /* BOTTOM-CONTENT LEFT - POSTS */
-  /* BOTTOM-CONTENT RIGHT - EVENT CALENDAR */
+.content .button a:hover {
+  background-color: #006371;
 }
-#bottom-content h2 {
-  text-align: left;
+/*  HP-BOTTOM-CONTENT */
+#hp-bottom-content {
+  /* HP BOTTOM-CONTENT LEFT - POSTS */
+  /* HP BOTTOM-CONTENT RIGHT - EVENT CALENDAR */
 }
-#bottom-content .post {
+#hp-bottom-content h2 {
+  padding: 0;
+  font-weight: 600;
+}
+#hp-bottom-content .button {
+  margin-top: 60px;
+  border-radius: 7px;
+  background-color: #b7cc29;
+  text-align: center;
+  transition-duration: 0.12s;
+  float: left;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+}
+#hp-bottom-content .button a {
+  text-decoration: none;
+  color: #ffffff;
+  transition-duration: 0.12s;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#hp-bottom-content .button a:hover {
+  background-color: #006371;
+}
+#hp-bottom-content .post {
   margin-top: 50px;
 }
-#bottom-content .post .post-image {
+#hp-bottom-content .post .post-image {
   display: inline-block;
   vertical-align: top;
   border-radius: 50%;
-  width: 20%;
 }
-#bottom-content .post .post-text {
+#hp-bottom-content .post .post-text {
   padding-left: 50px;
   display: inline-block;
   width: 75%;
 }
-#bottom-content .post .post-text p {
+#hp-bottom-content .post .post-text p {
   font-family: "Open Sans";
   font-size: 16px;
 }
-#bottom-content .post .post-text h3 {
+#hp-bottom-content .post .post-text h3 {
   font-family: "Exo 2";
   font-size: 20px;
   font-weight: 700;
@@ -481,55 +571,55 @@ h3 {
   margin-top: 0;
   margin-bottom: 20px;
 }
-#bottom-content .post .button {
+#hp-bottom-content .post .button {
   float: right;
-  border-radius: 8px;
   background-color: #b7cc29;
-  padding: 5px 17px;
-  margin-top: 30px;
-  max-width: 200px;
+  margin-top: 18px;
   text-align: center;
   transition-duration: 0.12s;
-}
-#bottom-content .post .button .fa {
-  font-size: 14px;
-}
-#bottom-content .post .button:hover {
-  background-color: #006371;
-}
-#bottom-content .post .button a {
-  max-width: 200px;
   text-decoration: none;
+  text-transform: none;
   font-family: "Open Sans";
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
+}
+#hp-bottom-content .post .button .fa {
+  font-size: 12px;
+}
+#hp-bottom-content .post .button a {
   color: #ffffff;
   transition-duration: 0.12s;
+  display: block;
+  padding: 3px 10px;
+  border-radius: 5px;
 }
-#bottom-content #event-calendar {
+#hp-bottom-content .post .button a:hover {
+  background-color: #006371;
+}
+#hp-bottom-content #event-calendar {
   background-color: #eef7f8;
   margin-top: 50px;
   border-radius: 5px;
 }
-#bottom-content #event-calendar .event {
+#hp-bottom-content #event-calendar .event {
   padding: 0px 34px 19px 34px;
 }
-#bottom-content #event-calendar .event:first-of-type {
+#hp-bottom-content #event-calendar .event:first-of-type {
   padding-top: 29px;
 }
-#bottom-content #event-calendar .event .date {
+#hp-bottom-content #event-calendar .event .date {
   font-family: "Exo 2";
   font-size: 22px;
   font-weight: 700;
   color: #006371;
   padding-bottom: 9px;
 }
-#bottom-content #event-calendar .event .description {
+#hp-bottom-content #event-calendar .event .description {
   font-size: 16px;
   font-family: "Open Sans";
   font-weight: 600;
 }
-#bottom-content #event-calendar .event:after {
+#hp-bottom-content #event-calendar .event:after {
   content: "";
   display: block;
   width: 130px;
@@ -537,10 +627,10 @@ h3 {
   background-color: #b7cc29;
   margin-top: 20px;
 }
-#bottom-content #event-calendar .event:last-of-type {
+#hp-bottom-content #event-calendar .event:last-of-type {
   padding-bottom: 10px;
 }
-#bottom-content #event-calendar .event:last-of-type:after {
+#hp-bottom-content #event-calendar .event:last-of-type:after {
   content: "";
   display: block;
   width: 130px;
@@ -548,37 +638,17 @@ h3 {
   background-color: #b7cc29;
   margin-top: 20px;
 }
-#bottom-content .button {
-  margin-top: 60px;
-  border-radius: 10px;
-  background-color: #b7cc29;
-  padding: 10px 20px;
-  max-width: 200px;
-  text-align: center;
-  transition-duration: 0.12s;
-}
-#bottom-content .button:hover {
-  background-color: #006371;
-}
-#bottom-content .button a {
-  max-width: 200px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-size: 20px;
-  color: #ffffff;
-  transition-duration: 0.12s;
-}
+/* HP PROJECTS */
 #projects {
   background-color: #FFF;
-  height: 500px;
 }
 #projects h2 {
   color: #b7cc29;
-  padding-top: 0;
-  margin-top: 60px;
   margin-bottom: 80px;
+}
+#projects h2:after {
+  content: "";
+  display: none;
 }
 #projects #project-list .eu-description {
   text-transform: uppercase;
@@ -590,15 +660,9 @@ h3 {
   margin-top: 20px;
   margin-bottom: 50px;
 }
-#projects #project-list .project-row .after-projects:after {
+#projects #project-list .eu-description:last-of-type:after {
   content: "";
-  background-color: #d3d3d3;
-  display: inline-block;
-  height: 120px;
-  width: 2px;
-  margin-bottom: -60px;
-  margin-left: 55px;
-  margin-right: 45px;
+  display: none;
 }
 #projects #project-list .project-row ul {
   padding-top: 0;
@@ -611,6 +675,82 @@ h3 {
 #projects #project-list .project-row ul li:first-of-type {
   padding-left: 0;
 }
+#projects #project-list .project-row ul li:last-of-type:after {
+  content: "";
+  display: none;
+}
 #projects #project-list .project-row ul li.bottom-projects {
   margin-right: 100px;
+  margin-left: -100px;
+}
+#projects #project-list .project-row ul li.bottom-projects:after {
+  content: "";
+  display: none;
+}
+#projects #project-list .project-row ul li:after {
+  content: "";
+  background-color: #d3d3d3;
+  display: inline-block;
+  height: 120px;
+  width: 2px;
+  margin-bottom: -60px;
+  margin-left: 55px;
+  margin-right: 45px;
+}
+/* CONTACTS PAGE */
+#contacts h2:after {
+  content: "";
+  display: none;
+}
+#contacts p {
+  padding-bottom: 2px;
+}
+#contacts .contact {
+  padding-bottom: 20px;
+}
+#contacts .contact.single-number {
+  margin-bottom: 35px;
+}
+#contacts .contact span {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+}
+#contacts .fa {
+  color: #006371;
+  padding-right: 3px;
+  font-size: 16px;
+}
+#contacts .fa.fa-mobile {
+  font-size: 24px;
+  padding-right: 5px;
+  padding-left: 3px;
+}
+#contacts .fa.fa-location-arrow {
+  padding-left: 1px;
+}
+.map {
+  padding-top: 40px;
+}
+.map iframe {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  margin-bottom: -45px;
+}
+/* FOOTER */
+#footer {
+  background-color: #006371;
+  color: #FFF;
+  font-size: 16px;
+  font-family: "Exo 2";
+}
+#footer a {
+  color: #FFF;
+}
+#footer #copyright {
+  float: left;
+}
+#footer #sign {
+  float: right;
 }
