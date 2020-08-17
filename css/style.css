@@ -345,7 +345,7 @@ body {
   background-image: url("../img/background_image.png");
   background-size: cover;
   background-position: center center;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -425,29 +425,57 @@ body {
 #header #header-nav #nav .fa-search {
   font-size: 27px;
 }
-#header #header-nav #nav li {
+#header #header-nav #nav > li {
   position: relative;
   margin-left: 45px;
   font-size: 20px;
   display: inline-block;
   vertical-align: middle;
 }
-#header #header-nav #nav li.main .submenu {
+#header #header-nav #nav > li.main .submenu {
   border: solid 1px #F00;
   position: absolute;
   left: -125px;
   top: 100px;
-  z-index: 13;
+  padding: 0;
+  z-index: 12;
   display: block;
   width: 100%;
   min-width: 750px;
   min-height: 300px;
   background-color: #FFFFFF;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.09);
 }
-#header #header-nav #nav li.main.active a {
+#header #header-nav #nav > li.main .submenu li {
+  padding-left: 1em;
+  padding-bottom: 15px;
+  font-family: "Exo 2";
+  font-size: 20px;
+  font-weight: 600;
+  border: solid 1px;
+  display: block;
+}
+#header #header-nav #nav > li.main .submenu li:before {
+  font-family: "FontAwesome";
+  font-size: 16px;
+  content: "\f054";
+  color: #b7cc29;
+  display: inline-block;
+  margin-left: -1em;
+  width: 1em;
+  padding-right: 25px;
+}
+#header #header-nav #nav > li.main .submenu li a {
+  color: #666666;
+  text-decoration: none;
+}
+#header #header-nav #nav > li.main .submenu li a:hover {
+  text-decoration: underline;
+}
+#header #header-nav #nav > li.main.active a {
   color: #b7cc29 !important;
 }
-#header #header-nav #nav li.main:before {
+#header #header-nav #nav > li.main:before {
   content: "";
   display: block;
   width: 0;
@@ -458,18 +486,18 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-#header #header-nav #nav li.main:hover:before,
-#header #header-nav #nav li.main.active:before {
+#header #header-nav #nav > li.main:hover:before,
+#header #header-nav #nav > li.main.active:before {
   width: 100%;
 }
-#header #header-nav #nav li a {
+#header #header-nav #nav > li a {
   font-family: "Exo 2";
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
   color: #006371;
 }
-#header #header-nav #nav li a:hover {
+#header #header-nav #nav > li a:hover {
   color: #b7cc29;
 }
 /* HOMEPAGE */
