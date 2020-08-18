@@ -9,7 +9,7 @@ h1 {
   font-weight: 600;
   font-size: 38px;
   text-transform: uppercase;
-  padding-top: 140px;
+  margin-top: 150px;
   margin-bottom: -10px;
   z-index: 11;
   position: relative;
@@ -433,19 +433,21 @@ body {
   vertical-align: middle;
 }
 #header #header-nav #nav > li.main .submenu {
-  border: solid 1px #F00;
   position: absolute;
   left: -125px;
-  top: 100px;
-  padding: 0;
+  top: 62px;
+  padding: 45px 0 0 0;
   z-index: 12;
-  display: block;
+  display: none;
   width: 100%;
   min-width: 750px;
   min-height: 300px;
-  max-height: 520px;
+  max-height: 620px;
   background-color: #FFFFFF;
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.09);
+}
+#header #header-nav #nav > li.main .submenu .active {
+  color: #006371;
 }
 #header #header-nav #nav > li.main .submenu li {
   float: left;
@@ -454,26 +456,40 @@ body {
   font-family: "Exo 2";
   font-size: 20px;
   font-weight: 600;
-  border: solid 1px;
   display: block;
   width: 370px;
 }
+#header #header-nav #nav > li.main .submenu li:hover {
+  color: #006371;
+}
+#header #header-nav #nav > li.main .submenu li:hover a {
+  color: #006371;
+}
+#header #header-nav #nav > li.main .submenu li:hover:before {
+  color: #006371;
+}
 #header #header-nav #nav > li.main .submenu li:before {
   font-family: "FontAwesome";
-  font-size: 16px;
+  font-size: 18px;
   content: "\f054";
   color: #b7cc29;
-  display: inline-block;
   margin-left: -1em;
   width: 1em;
   padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 13px;
+  float: left;
 }
 #header #header-nav #nav > li.main .submenu li a {
-  color: #666666;
+  color: #000000;
   text-decoration: none;
+  text-transform: none;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 #header #header-nav #nav > li.main .submenu li a:hover {
-  text-decoration: underline;
+  color: #006371;
 }
 #header #header-nav #nav > li.main.active a {
   color: #b7cc29 !important;
@@ -502,6 +518,12 @@ body {
 }
 #header #header-nav #nav > li a:hover {
   color: #b7cc29;
+}
+#nav li:hover .submenu {
+  display: block !important;
+}
+#nav li .submenu ul:hover {
+  display: block !important;
 }
 /* HOMEPAGE */
 .fa.green {
