@@ -2,12 +2,126 @@
 
 }
 
+@media screen and (max-width: 1350px) {
+#header{
+    #header-nav{
+        #nav{
+            li{
+                margin-left: 35px;
+            }
+        }
+    }
+}
+}
+
 @media screen and (max-width: 1280px) {
+    #header{
+        #header-nav{
+            #header-logo{
+                top: -30px;
+                img{
+                    width: 90%;
+                }
+            }
+            #nav{
+                li{
+                    margin-left: 32px;
+                    font-size: 18px;
+                }
+            }
+            
+        }
+    }
+    #hp-bottom-content{
+        .post{
+            margin-top: 40px;
+            .post-image{
+                width: 20%;
+            }
+            .post-text{
+                h3{
+                    font-size: 18px;
+                }
+            }
+        }
+        #event-calendar{
+            margin-top: 40px;
+            .event{
+                .date{
+                    font-size: 18px;
+                }
+                .description{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 
 }
 
 @media screen and (max-width: 1200px) {
+#toggle-menu{
+    display: inline-block;
+    #navibutton{
+        margin-right: 30px;
+    }
+}
+#header{
+    #header-nav{
+        #header-logo{
+            top: -40px;
+        }
+        #nav{
+            .fa{
+                left: 18px;
+                margin-top: 8px;
+            }
+            display: none;
+            li.main{
+                margin-top: 30px;
+                &:before{
+                    display: none;
+                }
+                a{
+                    padding: 20px;
+                }
+            }
+            >li{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
 
+                &.main{                
+                .submenu{
+                    top: 25px;
+                    left: -370px;
+                    padding-top: 15px;
+                    li{
+                        font-size: 16px;
+                        width: 270px;
+                        &:before{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+h2{
+    font-size: 24px;
+}
+.main-content{
+    padding-bottom: 0;
+}
+.content{
+    padding: 20px 30px;
+    top: 100px;
+    p{
+        font-size: 18px;
+    }
+}
 }
 
 @media screen and (max-width: 1024px) {
@@ -15,7 +129,11 @@
 }
 
 @media screen and (max-width: 991px) {
-
+#hp-bottom-content{
+    .button{
+        float: right;
+    }
+}
 }
 
 @media screen and (max-width: 768px) {
