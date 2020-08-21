@@ -368,6 +368,19 @@ body {
   max-width: 1400px;
   width: 100%;
 }
+#header #collapsed-menu-links {
+  display: none;
+  margin-top: 20px;
+  list-style: none;
+  padding-right: 35px;
+}
+#header #collapsed-menu-links li {
+  text-transform: uppercase;
+  font-family: "Exo 2";
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
 #header .links {
   margin-top: 20px;
   float: right;
@@ -747,6 +760,7 @@ h3 {
 #projects #project-list .project-row ul {
   padding-top: 0;
   margin-top: 60px;
+  padding-left: 0;
 }
 #projects #project-list .project-row ul li {
   display: inline;
@@ -778,35 +792,35 @@ h3 {
   margin-right: 45px;
 }
 /* CONTACTS PAGE */
-#contacts h2:after {
+.contacts h2:after {
   content: "";
   display: none;
 }
-#contacts p {
+.contacts p {
   padding-bottom: 2px;
 }
-#contacts .contact {
+.contacts .contact {
   padding-bottom: 20px;
 }
-#contacts .contact.single-number {
+.contacts .contact.single-number {
   margin-bottom: 35px;
 }
-#contacts .contact span {
+.contacts .contact span {
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: 700;
 }
-#contacts .fa {
+.contacts .fa {
   color: #006371;
   padding-right: 3px;
   font-size: 16px;
 }
-#contacts .fa.fa-mobile {
+.contacts .fa.fa-mobile {
   font-size: 24px;
   padding-right: 5px;
   padding-left: 3px;
 }
-#contacts .fa.fa-location-arrow {
+.contacts .fa.fa-location-arrow {
   padding-left: 1px;
 }
 .map {

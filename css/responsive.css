@@ -101,8 +101,22 @@
   }
 }
 @media screen and (max-width: 768px) {
+  h2:after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 {
+    text-align: center;
+  }
+  h3:after {
+    margin-left: auto;
+    margin-right: auto;
+  }
   #header .links {
     display: none;
+  }
+  #header #collapsed-menu-links {
+    display: block;
   }
   .content {
     margin-left: 0;
@@ -123,6 +137,12 @@
   #projects #project-list .project-row ul li:after {
     display: none;
   }
+  .contact {
+    text-align: center;
+  }
+  .paddingL25p {
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 576px) {
   h2 {
@@ -137,5 +157,18 @@
   #projects #project-list .project-row ul li img {
     padding: 0;
     margin-top: 20px;
+  }
+  #footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #footer #copyright {
+    float: none;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  #footer #sign {
+    float: none;
+    text-align: center;
   }
 }

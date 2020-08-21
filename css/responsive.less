@@ -141,14 +141,37 @@ h2{
         margin-bottom: 30px;
     }
 }
+
+
 }
 
 @media screen and (max-width: 768px) {
-#header{
+   
+    h2{
+        &:after{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    h3{
+        text-align: center;
+        &:after{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    #header{
     .links{
         display: none;
     }
+    #collapsed-menu-links{
+        display: block;
+    }
 }
+
+
 
 .content{
     margin-left: 0;
@@ -186,6 +209,15 @@ h2{
         }
     }
 }
+
+.contact{
+    text-align: center;
+    
+}
+
+.paddingL25p{
+    padding-left: 0;
+}
 }
 
 @media screen and (max-width: 576px) {
@@ -212,6 +244,19 @@ h2{
                 }
             }
         }
+    }
+}
+#footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    #copyright{
+        float: none;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    #sign{
+        float: none;
+        text-align: center;
     }
 }
 }
