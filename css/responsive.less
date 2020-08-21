@@ -148,6 +148,7 @@ h2{
 @media screen and (max-width: 768px) {
    
     h2{
+        text-align: center;
         &:after{
             margin-left: auto;
             margin-right: auto;
@@ -171,7 +172,20 @@ h2{
     }
 }
 
-
+#hp-bottom-content{
+    .post{
+        .post-text{
+            h3{
+                text-align: left;
+                &:after{
+                    margin-left: 0;
+                    margin-right: 0;
+                    
+                }
+            }
+        }
+    }
+}
 
 .content{
     margin-left: 0;
@@ -231,6 +245,22 @@ h2{
     }
 }
 
+#obsah{
+    p{
+        font-size: 16px;
+    }
+}
+
+#path{
+    ul{
+        li{
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
 #projects{
     #project-list{
         .project-row{
@@ -246,6 +276,8 @@ h2{
         }
     }
 }
+
+
 #footer{
     padding-top: 20px;
     padding-bottom: 20px;

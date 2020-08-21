@@ -792,6 +792,10 @@ h3 {
   margin-right: 45px;
 }
 /* CONTACTS PAGE */
+h2.center-h2-after:after {
+  margin-left: auto;
+  margin-right: auto;
+}
 .contacts h2:after {
   content: "";
   display: none;
@@ -881,7 +885,6 @@ h3 {
   font-weight: 400;
 }
 #obsah img {
-  max-width: 624px;
   margin: auto;
 }
 /* FOOTER */

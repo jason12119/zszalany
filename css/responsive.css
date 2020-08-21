@@ -101,6 +101,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
   h2:after {
     margin-left: auto;
     margin-right: auto;
@@ -117,6 +120,13 @@
   }
   #header #collapsed-menu-links {
     display: block;
+  }
+  #hp-bottom-content .post .post-text h3 {
+    text-align: left;
+  }
+  #hp-bottom-content .post .post-text h3:after {
+    margin-left: 0;
+    margin-right: 0;
   }
   .content {
     margin-left: 0;
@@ -150,6 +160,12 @@
   }
   .content p {
     font-size: 16px;
+  }
+  #obsah p {
+    font-size: 16px;
+  }
+  #path ul li a {
+    font-size: 14px;
   }
   #projects #project-list .project-row ul li.bottom-projects {
     margin: 0;
