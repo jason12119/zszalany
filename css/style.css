@@ -368,7 +368,7 @@ body {
   max-width: 1400px;
   width: 100%;
 }
-#header #links {
+#header .links {
   margin-top: 20px;
   float: right;
   font-family: "Exo 2";
@@ -377,19 +377,19 @@ body {
   letter-spacing: 2px;
   padding-right: 35px;
 }
-#header #links span {
+#header .links span {
   padding-left: 17px;
   padding-right: 17px;
 }
-#header #links li {
+#header .links li {
   display: inline;
   text-transform: uppercase;
-  padding: 0;
+  padding: 8px;
 }
-#header #links img {
+#header .links img {
   margin-top: -8px;
 }
-#header #links a {
+#header .links a {
   color: #FFF;
 }
 #header #header-nav {
@@ -399,6 +399,7 @@ body {
   background-color: #FFFFFF;
   width: 100%;
   padding-bottom: 25px;
+  z-index: 14;
 }
 #header #header-nav #header-logo {
   float: left;
@@ -550,6 +551,7 @@ h3 {
   max-width: 740px;
   background-color: #FFFFFF;
   border-radius: 15px;
+  z-index: 12;
 }
 .content h2 {
   padding-top: 0;
